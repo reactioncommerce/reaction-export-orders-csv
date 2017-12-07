@@ -21,5 +21,8 @@
   "bugs": {
     "url": "https://github.com/reactioncommerce/reaction-export-orders-csv/issues"
   },
-  "homepage": "https://github.com/reactioncommerce/reaction-export-orders-csv#readme"
+  "homepage": "https://github.com/reactioncommerce/reaction-export-orders-csv#readme",
+  "dependencies": {
+    "papaparse": "^4.3.6"
+  }
 }

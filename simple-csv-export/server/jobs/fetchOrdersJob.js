@@ -55,7 +55,6 @@ const iEntered = () => {
   file.name("orders.csv");
   csvCollection.insert(file);
   const document = csvCollection.insert(file);
-  console.log(document._id, "abi the document ID");
 };
 
 export default function () {
@@ -64,7 +63,6 @@ export default function () {
     workTimeout: 18000 * 1000
   }, (job, callback) => {
     iEntered();
-    console.log("I worked finally");
     job.done("Job completed");
     callback();
   });
