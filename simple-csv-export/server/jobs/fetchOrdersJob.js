@@ -1,7 +1,5 @@
 import _ from "lodash";
 import Papa from "papaparse";
-import { Meteor } from "meteor/meteor";
-// import { Logger } from "/server/api";
 import { Jobs, Orders } from "/lib/collections";
 
 const iEntered = () => {
@@ -55,6 +53,7 @@ const iEntered = () => {
   file.name("orders.csv");
   csvCollection.insert(file);
   const document = csvCollection.insert(file);
+  return document;
 };
 
 export default function () {
